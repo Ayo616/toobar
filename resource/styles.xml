@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    //////////////////////////////////////
+    <!--设置一个toolbar主题-->
+
+    <style name="Theme.ToolBar.ZhiHu" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="actionOverflowButtonStyle">@style/ActionButton.Overflow.ZhiHu</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+    </style>
+
+    <style name="ActionButton.Overflow.ZhiHu" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@mipmap/more</item>
+    </style>
+
+
+    ////////////////////////////
+    <!--设置一个toolbar菜单的主题-->
+
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">#FFFFFF</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+        <!--新增一个item，用于控制menu-->
+    </style>
+
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+        <!--把该属性改为false即可使menu位置位于toolbar之下-->
+    </style>
+
+</resources>
